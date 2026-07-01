@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "story_id": "US-000",
+    "title": "Short user story title",
+    "source": "reference/PRODUCT_KNOWLEDGE.md",
+    "module": "Module name (e.g. Checkout, Auth, Invite, Search)",
+    "feature": "Feature name (e.g. Guest Checkout Flow)",
+    "quality_score": 0
+  },
+  "test_cases": [
+    {
+      "id": "TC-001",
+      "requirement_ref": "AC-1",
+      "module": "Module name",
+      "sub_module": "Sub-module name (optional)",
+      "feature": "Feature name",
+      "platform": "Web | Android | iOS | All",
+      "user_role": "Role name (e.g. Customer, Admin, Agent)",
+      "title": "Short, action-oriented test case title",
+      "test_scenario": "One-liner: what scenario is being verified",
+      "type": "Functional | Negative | Edge-Boundary | Non-Functional | E2E-Integration | Smoke | Security | Accessibility | Performance | Exploratory",
+      "priority": "High | Medium | Low",
+      "severity": "Critical | High | Medium | Low",
+      "preconditions": "What must be true before the test runs",
+      "steps": ["Step one", "Step two", "Step three"],
+      "test_data": "key=value, key2=value2",
+      "expected_result": "What the system should do",
+      "requirement_mapping": "AC-1, BR-2",
+      "automation_candidate": "Yes | No | Conditional",
+      "tags": ["Smoke", "Regression"]
+    }
+  ],
+  "gaps": [
+    {
+      "req_ref": "AC-1",
+      "requirement_text": "The requirement as written in the design doc (or 'NOT SPECIFIED')",
+      "gap_type": "Missing | Missing acceptance criteria | Ambiguous | Contradictory | Untestable",
+      "issue": "What is unclear, missing, contradictory, or untestable",
+      "suggested_fix": "Concrete suggestion to close the gap",
+      "severity": "High | Medium | Low"
+    }
+  ],
+  "qa_review": {
+    "smoke_tests": ["TC-001"],
+    "regression_tests": ["TC-001"],
+    "security_checks": [
+      "Verify auth tokens cannot be replayed after use",
+      "Verify session expiry blocks mid-flow actions"
+    ],
+    "accessibility_checks": [
+      "Verify WCAG 2.1 AA compliance on all screens",
+      "Test full flow with VoiceOver and TalkBack"
+    ],
+    "performance_checks": [
+      "Primary screen loads within an acceptable budget on 4G",
+      "Primary API responds within an acceptable budget"
+    ],
+    "exploratory_ideas": [
+      "Test with multiple browser tabs open simultaneously",
+      "Test with network interruption at each step of the flow",
+      "Test session expiry between each step"
+    ]
+  }
+}

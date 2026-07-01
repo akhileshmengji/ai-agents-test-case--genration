@@ -1,0 +1,5 @@
+{
+  "output_dir": "./output/test-cases",
+  "missing_requirements_dir": "./output/missing-requirements",
+  "automation_pipeline_dir": ""
+}
